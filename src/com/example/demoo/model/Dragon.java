@@ -7,13 +7,10 @@ public class Dragon extends Monture{
 
     @Override
     public void crier() {
-        System.out.println(super.getNom());
-        System.out.println(this.getNom());
         System.out.println("Graoou");
     }
 
     public void voler() {
         System.out.println("Le dragon s'envole");
-        this.crier();
     }
 }

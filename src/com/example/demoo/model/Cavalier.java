@@ -5,7 +5,7 @@ import java.util.HashMap;
 public class Cavalier {
     private String nom;
     private String nomFamille;
-    private HashMap<String, Cheval> chevaux;
+    private HashMap<String, Monture> montures;
 
     // Constructeur
 
@@ -13,13 +13,7 @@ public class Cavalier {
     public Cavalier(String nom, String nomFamille) {
         this.nom = nom;
         this.nomFamille = nomFamille;
-        this.chevaux = new HashMap<>();
-    }
-
-    public Cavalier(String nom, String nomFamille, HashMap<String, Cheval> chevaux) {
-        this.nom = nom;
-        this.nomFamille = nomFamille;
-        this.chevaux = chevaux;
+        this.montures = new HashMap<>();
     }
 
     public String getNom() {
@@ -38,11 +32,11 @@ public class Cavalier {
         this.nomFamille = nomFamille;
     }
 
-    public HashMap<String, Cheval> getChevaux() {
-        return chevaux;
+    public HashMap<String, Monture> getMontures() {
+        return montures;
     }
 
-    public void addCheval(Cheval chevalAAjouter) {
-        this.chevaux.put(chevalAAjouter.getNom(), chevalAAjouter);
+    public void addMonture(Monture monture) {
+        this.montures.put(monture.getNom(), monture);
     }
 }

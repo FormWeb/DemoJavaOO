@@ -24,7 +24,7 @@ public class Cheval extends Monture {
 
     public int courir() {
         Random random = new Random();
-        return random.nextInt(super.getVitesseMax(), vitesseMax);
+        return random.nextInt(super.getVitesseMin(), vitesseMax);
     }
 
     @Override
