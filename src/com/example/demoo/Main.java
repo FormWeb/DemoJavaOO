@@ -2,6 +2,8 @@ package com.example.demoo;
 
 import com.example.demoo.model.*;
 
+import java.time.LocalDate;
+
 public class Main {
     public static void main(String[] args) {
         Dragon d1 = new Dragon("Eragon", 100, 200);
@@ -27,5 +29,10 @@ public class Main {
 
             System.out.println("----------------------------");
         }
+
+        // Fonctionnement date
+        LocalDate date = LocalDate.of(1994, 3, 18);
+        System.out.println(date.getMonth());
+        LocalDate now = LocalDate.now();
     }
 }
