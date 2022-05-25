@@ -1,5 +1,6 @@
 package com.example.demoo;
 
+import com.example.demoo.interfaces.INourrir;
 import com.example.demoo.model.*;
 
 import java.time.LocalDate;
@@ -34,5 +35,11 @@ public class Main {
         LocalDate date = LocalDate.of(1994, 3, 18);
         System.out.println(date.getMonth());
         LocalDate now = LocalDate.now();
+
+        // Fonctionnement
+        INourrir trucQuiSeNourrit = c1;
+        INourrir autreTrucQuiSeNourrit = ch1;
+        trucQuiSeNourrit.seNourrir();
+        autreTrucQuiSeNourrit.seNourrir();
     }
 }

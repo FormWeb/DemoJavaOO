@@ -1,8 +1,10 @@
 package com.example.demoo.model;
 
+import com.example.demoo.interfaces.INourrir;
+
 import java.util.HashMap;
 
-public class Cavalier {
+public class Cavalier implements INourrir {
     private String nom;
     private String nomFamille;
     private HashMap<String, Monture> montures;
@@ -38,5 +40,10 @@ public class Cavalier {
 
     public void addMonture(Monture monture) {
         this.montures.put(monture.getNom(), monture);
+    }
+
+    @Override
+    public void seNourrir() {
+        System.out.println("Nomnom");
     }
 }

@@ -17,10 +17,6 @@ public class Cheval extends Monture {
         this.sexe = sexe;
     }
 
-    @Override
-    public void crier() {
-        System.out.println("Brrrrr");
-    }
 
     public int courir() {
         Random random = new Random();
@@ -30,5 +26,11 @@ public class Cheval extends Monture {
     @Override
     public String toString() {
         return "Bonjour";
+    }
+
+
+    @Override
+    public void crier() {
+        System.out.println("Brrr");
     }
 }
